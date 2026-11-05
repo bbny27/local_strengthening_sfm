@@ -1,0 +1,13 @@
+{
+  "dataset": "speech",
+  "seed": 8,
+  "source": "Bach submodular_2_0.zip",
+  "f_empty": 0.0,
+  "groups": 1105,
+  "incidences": 5438,
+  "lambda_": 22.0,
+  "alpha": 0.5,
+  "n": 800,
+  "fingerprint": "bd00dc328624ef457a8ff07b3813241e1a03e7eb40bef413c0d9306a3af2e637",
+  "preparation_seconds": 0.04063010006211698
+}
