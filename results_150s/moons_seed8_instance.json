@@ -1,0 +1,11 @@
+{
+  "dataset": "moons",
+  "seed": 8,
+  "source": "Bach submodular_2_0.zip",
+  "f_empty": 0.0,
+  "labels": 16,
+  "generator": "NumPy PCG64; Bach construction, not MATLAB-identical",
+  "n": 400,
+  "fingerprint": "7aa67c53cd6645d85f2f06a11dbd2afa80652a511220fcb6627952f524249978",
+  "preparation_seconds": 0.020974599989131093
+}
