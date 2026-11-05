@@ -36,13 +36,13 @@ python test.py --solver highs
 python test.py --solver gurobi
 ```
 
-The first command verifies the upstream archive, source and data hashes, benchmark coverage, and agreement of the saved CSV, metadata and JSON records. It requires no solver calls. The other commands run every published dataset and seed through the normal CLI on ten-variable restrictions, check exact optima and base inequalities by enumerating subsets, and exercise result aggregation. The HiGHS setting runs 200 smoke solves. The Gurobi setting runs 350 and includes the QP methods.
+The first command verifies the previous saved data, source and data hashes, benchmark coverage, and agreement of the saved CSV, metadata and JSON records. The other commands run every published dataset and seed through the normal CLI on ten-variable restrictions, check exact optima and base inequalities by enumerating subsets, and exercise result aggregation. The HiGHS setting runs 200 solves. The Gurobi setting runs 350 and includes the QP methods.
 
 The solver modes also invoke `check.py` for formulation and certificate checks and `benchmark_tests.py` for runner and aggregation regressions. Gurobi mode additionally invokes `consolidation_tests.py` with its regression fixture. The full formulation checks require PyMaxflow. Use `--instances-only` to run the archive, instance and aggregation checks separately from these additional suites. Smoke outputs use a temporary directory by default. Pass `--out smoke_results` to keep them.
 
 ## Data
 
-The unchanged upstream release is in `data/bach_original.zip`. See Francis Bach, *Learning with Submodular Functions: A Convex Optimization Perspective*, Section 12.1, and the author's software page for the original release and its terms. [Paper](https://arxiv.org/abs/1111.6453) · [Software and data](https://www.di.ens.fr/~fbach/submodular/)
+The data is in `data/bach_original.zip`. See Francis Bach, *Learning with Submodular Functions: A Convex Optimization Perspective*, Section 12.1, and the author's software page for the original release and its terms. [Paper](https://arxiv.org/abs/1111.6453) · [Software and data](https://www.di.ens.fr/~fbach/submodular/)
 
 | Dataset | Variables | Objective |
 | --- | ---: | --- |
