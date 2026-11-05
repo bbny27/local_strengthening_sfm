@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+gurobi.log
+gurobi.lic
+checks.json
+results/
+results_reproduced/
+smoke_results/
+summaries/

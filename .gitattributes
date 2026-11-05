@@ -1,0 +1,6 @@
+# Preserve bytes for the source hashes recorded in results_150s/config.json.
+sfm.py -text
+data.py -text
+run.py -text
+check.py -text
+requirements.txt -text
